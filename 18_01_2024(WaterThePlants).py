@@ -34,16 +34,3 @@ class Solution:
         
          # Ending Points
 
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
-
-if __name__ == '__main__':
-    t = int(input())
-    for _ in range(t):
-        n = int(input())
-        gallery = [int(x) for x in input().strip().split()]
-        obj = Solution()
-        print(obj.min_sprinklers(gallery,n))
-
-# } Driver Code Ends
