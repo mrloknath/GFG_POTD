@@ -1,38 +1,38 @@
-from typing import List
-from collections import defaultdict
-
 class Solution:
-    def kTop(self, arr: List[int], N: int, K: int) -> List[List[int]]:
-        ans = []
-        mp = defaultdict(int)  # to store frequency
-        top = [-1] * (K + 1)
+    def kTop(self, a, N, K):
+        final_ans = []
+        top = [0 for i in range(K + 1)]
+        freq = {i: 0 for i in range(K + 1)}
 
-        for i in range(N):
-            temp = []
+        for m in range(N):
+            if a[m] in freq.keys():
+                freq[a[m]] += 1
+            else:
+                freq[a[m]] = 1
 
-            mp[arr[i]] += 1
-            top[K] = arr[i]
+            top[K] = a[m]
+            i = top.index(a[m])
+            i -= 1
 
-            # trying to find the first occurrence of the current element
-            ind = -1
-            for j in range(K + 1):
-                if top[j] == arr[i]:
-                    ind = j
-                    break
-
-            for j in range(ind - 1, -1, -1):
-                if mp[top[j]] < mp[top[j + 1]]:
-                    top[j], top[j + 1] = top[j + 1], top[j]
-                elif mp[top[j]] == mp[top[j + 1]] and top[j] > top[j + 1]:
-                    top[j], top[j + 1] = top[j + 1], top[j]
+            while i >= 0:
+                if freq[top[i]] < freq[top[i + 1]]:
+                    t = top[i]
+                    top[i] = top[i + 1]
+                    top[i + 1] = t
+                elif freq[top[i]] == freq[top[i + 1]] and top[i] > top[i + 1]:
+                    t = top[i]
+                    top[i] = top[i + 1]
+                    top[i + 1] = t
                 else:
                     break
+                i -= 1
 
-            for j in range(K):
-                if top[j] == -1:
-                    break
-                temp.append(top[j])
+            i = 0
+            ans = []
+            while i < K and top[i] != 0:
+                ans.append(top[i])
+                i += 1
 
-            ans.append(temp)
+            final_ans.append(ans)
 
-        return ans
+        return final_ans
