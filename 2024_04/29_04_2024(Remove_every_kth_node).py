@@ -3,7 +3,6 @@ class Solution:
         #code here  
         if k == 1:
             return None
-        
         counter = 0
         prev = None
         cur = head
@@ -13,5 +12,4 @@ class Solution:
             prev = cur
             cur = cur.next
             counter = (counter + 1) % k
-        
         return head
