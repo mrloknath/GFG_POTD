@@ -1,4 +1,17 @@
+from typing import Optional
+from collections import deque
 
+from typing import List
+
+"""
+
+definition of binary tree node.
+class Node:
+    def _init_(self,val):
+        self.data = val
+        self.left = None
+        self.right = None
+"""
 class Solution:
     def __init__(self):
         self.all_paths = []
