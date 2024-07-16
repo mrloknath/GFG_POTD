@@ -1,5 +1,6 @@
 class Solution:
     def smallestNumber(self, s, d):
+        # code here
         for i in range (pow(10,d-1),pow(10,d)+1):
             k=i
             sum=0
