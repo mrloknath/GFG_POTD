@@ -1,6 +1,7 @@
 class Solution:
     # Function to construct a binary tree from a parent array.
     def createTree(self, parent):
+        # code here
         temp = {}
         for key, parent_index in enumerate(parent):
             node = temp[parent_index] = temp.get(parent_index, Node(parent_index))
