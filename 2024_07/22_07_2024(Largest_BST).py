@@ -1,4 +1,3 @@
-#User function Template for python3
 class Solution:
     def largestBst(self, root):
         # Your code here
