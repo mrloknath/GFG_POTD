@@ -1,6 +1,6 @@
 class Solution:
     def merge(self, root1, root2):
-        #code here
+        # code here
         def dfs(node, arr):
             if not node:
                 return
