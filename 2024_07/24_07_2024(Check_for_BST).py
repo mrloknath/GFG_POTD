@@ -7,6 +7,6 @@ class Solution:
         return self.is_bst(node.left, min_val, node.data) and self.is_bst(node.right, node.data, max_val)
         
     def isBST(self, root):
-        #code here
+        # code here
         return self.is_bst(root, float('-inf'), float('inf'))
 
