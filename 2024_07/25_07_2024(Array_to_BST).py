@@ -3,6 +3,7 @@ class Solution:
         if not nums:
             return None
         return self.buildBST(nums, 0, len(nums) - 1)
+        
     def buildBST(self, nums, left, right):
         if left > right:
             return None
