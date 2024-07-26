@@ -1,4 +1,5 @@
 from collections import Counter
+
 class Solution:
     def kPangram(self,string, k):
         string = string.replace(' ', '')
