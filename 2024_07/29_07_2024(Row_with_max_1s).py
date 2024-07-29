@@ -1,6 +1,6 @@
 class Solution:
     def rowWithMax1s(self, arr):
-        #
+        # code
         max_count, max_index = 0, -1
         for i in range(len(arr)):
             if arr[i][-1] > max_count:
