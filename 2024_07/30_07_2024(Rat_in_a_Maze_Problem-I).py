@@ -10,7 +10,6 @@ class Solution:
             if (r, c) == (n-1, n-1):
                 ans.append("".join(dirs))
                 return
-            
             visited.add((r, c))
             for d in "UDLR":
                 dirs.append(d)
