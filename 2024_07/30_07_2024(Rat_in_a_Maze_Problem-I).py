@@ -1,5 +1,4 @@
 from typing import List
-
 class Solution:
     def findPath(self, m: List[List[int]]) -> List[str]:
         # code here
