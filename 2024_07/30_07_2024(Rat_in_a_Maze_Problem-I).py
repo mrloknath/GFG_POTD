@@ -7,7 +7,6 @@ class Solution:
             nonlocal ans, visited
             if r < 0 or r >= n or c < 0 or c >= n or m[r][c] == 0 or (r, c) in visited:
                 return 
-            
             if (r, c) == (n-1, n-1):
                 ans.append("".join(dirs))
                 return
