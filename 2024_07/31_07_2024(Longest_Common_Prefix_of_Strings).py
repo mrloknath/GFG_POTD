@@ -1,3 +1,4 @@
+
 class Solution:
     def longestCommonPrefix(self, arr):
         pre=arr[0]
