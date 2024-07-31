@@ -1,6 +1,6 @@
 class Solution:
     def longestCommonPrefix(self, arr):
-        #code here
+        # code here
         pre=arr[0]
         for word in arr[1:]:
             i=0
