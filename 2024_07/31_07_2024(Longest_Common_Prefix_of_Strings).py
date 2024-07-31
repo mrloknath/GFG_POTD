@@ -9,3 +9,4 @@ class Solution:
                 i+=1
             pre=pre[:i]
         return pre if len(pre)>0 else -1
+        
