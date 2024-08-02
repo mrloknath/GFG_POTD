@@ -6,7 +6,6 @@ class Solution:
             dp[i+1][0] = i+1
         for i in range(n):
             dp[0][i+1] = i+1
-            
         for i in range(m):
             for j in range(n):
                 if str1[i] == str3[j]:
