@@ -1,5 +1,4 @@
 class Solution:    
-    #Function to find the maximum number of meetings that can
     def maximumMeetings(self,n,start,end):
         # code here
         meetings = list(zip(start, end))
