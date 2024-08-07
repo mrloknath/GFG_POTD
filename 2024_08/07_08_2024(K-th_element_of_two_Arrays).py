@@ -8,7 +8,6 @@ class Solution:
                 return arr2[j+k-1]
             if k == 1:
                 return min(arr1[i], arr2[j])
-                
             k1 = min(m, k//2)
             k2 = k-k1
             
