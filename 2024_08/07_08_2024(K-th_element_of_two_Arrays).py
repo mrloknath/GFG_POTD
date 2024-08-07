@@ -4,7 +4,6 @@ class Solution:
         def kth(arr1, arr2, i, j, m, n, k):
             if m > n:
                 return kth(arr2, arr1, j, i, n, m, k)
-                
             if m == 0:
                 return arr2[j+k-1]
             if k == 1:
