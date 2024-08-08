@@ -1,7 +1,6 @@
 class Solution:
   
     def is_sum_tree(self, node):
-      
         def helper(node):
             if not node:
                 return [0,True]
