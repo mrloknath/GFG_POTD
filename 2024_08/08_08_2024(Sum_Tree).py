@@ -11,5 +11,4 @@ class Solution:
             if node.data!=left_val+right_val or left_flag==False or right_flag==False:
                 return [left_val+right_val,False]
             return [node.data,True]
-          
         return helper(node)[1]
