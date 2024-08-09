@@ -4,5 +4,5 @@ class Solution:
         a.sort()
         for i in range(len(a)):
             ans+=a[i]*i
-        return (ans%(10**9+7))
+        return ans%(10**9+7)
       
