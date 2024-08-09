@@ -5,4 +5,3 @@ class Solution:
         for i in range(len(a)):
             ans+=a[i]*i
         return ans%(10**9+7)
-      
