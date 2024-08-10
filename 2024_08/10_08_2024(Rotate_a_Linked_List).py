@@ -16,5 +16,4 @@ class Solution:
             lastNode = lastNode.next  
             current = nextNode  
             remainingRotations -= 1  
-            
         return head  
