@@ -4,6 +4,7 @@ class Solution:
         reversedPart = None  
         remainingRotations = k
         lastNode = head
+        
         while lastNode.next is not None:
             lastNode = lastNode.next
             
