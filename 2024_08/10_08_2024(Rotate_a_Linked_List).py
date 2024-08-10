@@ -6,6 +6,7 @@ class Solution:
         lastNode = head
         while lastNode.next is not None:
             lastNode = lastNode.next
+            
         while remainingRotations != 0 and current is not None:
             nextNode = current.next 
             head = nextNode  
