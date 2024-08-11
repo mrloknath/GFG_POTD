@@ -3,7 +3,6 @@ class Solution:
         sorted_Jobs = sorted(Jobs,key=lambda x: x.profit, reverse=True)
         timeline = [-1]*n
         sm_ct,ct = 0,0
-        
         for i in sorted_Jobs:
             
             idx = i.deadline-1
