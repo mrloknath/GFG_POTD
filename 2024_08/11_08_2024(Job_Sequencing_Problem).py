@@ -1,6 +1,5 @@
 class Solution: 
     def JobScheduling(self,Jobs,n):
-        
         sorted_Jobs = sorted(Jobs,key=lambda x: x.profit, reverse=True)
         
         timeline = [-1]*n
