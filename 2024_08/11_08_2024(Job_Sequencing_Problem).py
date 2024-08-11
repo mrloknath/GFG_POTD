@@ -9,5 +9,4 @@ class Solution:
             if idx >= 0:
                 timeline[idx] = i.id
                 sm_ct,ct = sm_ct+i.profit,ct+1
-                
         return [ct,sm_ct]
