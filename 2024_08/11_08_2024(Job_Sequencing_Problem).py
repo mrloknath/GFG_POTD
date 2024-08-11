@@ -4,9 +4,7 @@ class Solution:
         timeline = [-1]*n
         sm_ct,ct = 0,0
         for i in sorted_Jobs:
-            
             idx = i.deadline-1
-            
             while idx >= 0 and timeline[idx] != -1: idx -= 1
             
             if idx >= 0:
