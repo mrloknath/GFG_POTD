@@ -1,6 +1,5 @@
 class Solution:
     def sum_of_middle_elements(self, arr1, arr2):
-        # code here
         ans=arr1+arr2
         ans.sort()
         n=len(ans)
