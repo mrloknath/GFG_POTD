@@ -1,6 +1,5 @@
 class Solution:
     def addOne(self,head):
-        #Returns new head of linked List.
         itr=head
         lst=[]
         count=0
