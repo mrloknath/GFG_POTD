@@ -13,5 +13,4 @@ class Solution:
         for digit in str(num)[1:]:
             current.next = Node(int(digit))
             current = current.next
-            
         return new_head
