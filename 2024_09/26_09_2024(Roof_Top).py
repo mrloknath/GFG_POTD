@@ -1,4 +1,4 @@
-class Solution:.
+class Solution:
     def maxStep(self, arr):
         ct = mx = 0
         for i in range(1,len(arr)):
